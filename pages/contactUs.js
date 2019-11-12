@@ -1,17 +1,15 @@
-
-
-//basic home page 
 import Link from 'next/link';
 import Layout from '../components/Layout';
-const Index = ()=>{
+const ContactUs = ()=>{
+
     return (
       <Layout>
         <div>
-          <h1> Home Page</h1>
+          <h2> Contact Us page </h2>
         </div>
       </Layout>
-    )
+    );
 }
 
 
-export default Index
+export default ContactUs;
