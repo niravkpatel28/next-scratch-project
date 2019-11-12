@@ -4,11 +4,15 @@
 // component can access the jsx within the start and ending tags using props.children
 
 import Link from 'next/link';
+import Head from 'next/head';
 const Layout = (props)=>{
 
 
     return (
       <>
+        <Head>
+          <title> NEXT js Sample App</title>
+        </Head>
         <header>
           <nav>
             <Link href="/">
@@ -20,14 +24,14 @@ const Layout = (props)=>{
             </Link>
           </nav>
         </header>
-        <hr/>
+        <hr />
         {props.children}
-        <hr/>
+        <hr />
         <footer>
           <p> Some footer &copy; {new Date().getFullYear()} </p>
         </footer>
         <style jsx>{`
-        //    add style that is locally scoped
+          //    add style that is locally scoped
         `}</style>
       </>
     );
